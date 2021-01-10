@@ -2,7 +2,7 @@
 
 import cv2
 import numpy as np
-img = cv2.imread(filename='lena.jpg', flags=1)
+img = cv2.imread(filename='lena.jpg', flags=0)
 # 1 for coloured img
 # 0 for grayscale img
 # -1 for unchange img
