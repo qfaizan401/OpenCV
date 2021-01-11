@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 print('Package Imported', cv2.__version__)
 
 #Chapter 1: Read- Images, Videos, Webcam
@@ -15,6 +16,7 @@ cap = cv2.VideoCapture(video_path)
     #As we know that video is a squence of images(frames) so we need to loop through it.
 while True:
     sucess, img = cap.read()
+    print(np.shape(img))
     cv2.imshow('Video', img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
@@ -24,6 +26,7 @@ WebCam_cap = cv2.VideoCapture(0)
     #As we know that video is a squence of images(frames) so we need to loop through it.
 while True:
     sucess, img = WebCam_cap.read()
+    print(np.shape(img))
     cv2.imshow('Video', img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
