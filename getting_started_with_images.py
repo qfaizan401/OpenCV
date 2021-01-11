@@ -2,7 +2,7 @@
 
 import cv2
 import numpy as np
-img = cv2.imread(filename='lena.jpg', flags=0)
+img = cv2.imread(filename='Resources/lena.jpg', flags=0)
 # 1 for coloured img
 # 0 for grayscale img
 # -1 for unchange img
@@ -15,4 +15,4 @@ print(f'\nThe shape of image Lena is {np.shape(img)}')
 
 #write an img to a file
 
-cv2.imwrite(filename='copy_of_lena.png',img=img)
+cv2.imwrite(filename='Resources/copy_of_lena.png', img=img)
