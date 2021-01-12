@@ -1,8 +1,8 @@
+#Chapter 1: Read- Images, Videos, Webcam
+
 import cv2
 import numpy as np
 print('Package Imported', cv2.__version__)
-
-#Chapter 1: Read- Images, Videos, Webcam
 
 #Part 1: Read Images
 img_path = 'Resources/lena.jpg'
